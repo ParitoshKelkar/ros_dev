@@ -1,0 +1,5 @@
+geometry_msgs/PolygonStamped user_polygon
+---
+bool outcome
+
+

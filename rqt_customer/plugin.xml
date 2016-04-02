@@ -1,0 +1,21 @@
+<library path="src">
+  <class name="customerPlugin" type="rqt_customer.customer_view.customerPlugin" base_class_type="rqt_gui_py::Plugin">
+    <description>
+	The Customer Side GUI
+    </description>
+    <qtgui>
+      <!-- optional grouping...
+      <group>
+        <label>Group</label>
+      </group>
+      <group>
+        <label>Subgroup</label>
+      </group>
+      -->
+      <label>Customer View</label>
+      <icon type="theme">system-help</icon>
+      <statustip>Customer GUI</statustip>
+    </qtgui>
+  </class>
+</library>
+

@@ -1,0 +1,22 @@
+<library path="src">
+  <class name="operatorPlugin" type="rqt_operator.operator_view.operatorPlugin" base_class_type="rqt_gui_py::Plugin">
+    <description>
+      A  GUI plugin to see operator console 
+    </description>
+    <qtgui>
+      <!-- optional grouping...
+      <group>
+        <label>Group</label>
+      </group>
+      <group>
+        <label>Subgroup</label>
+      </group>
+      -->
+      <label>Operator View</label>
+      <icon type="theme">system-help</icon>
+      <statustip>See through the eyes of the operator</statustip>
+    </qtgui>
+  </class>
+</library>
+
+

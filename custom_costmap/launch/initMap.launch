@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+
+<launch>
+
+  <node name="static_tf0" pkg="tf" type="static_transform_publisher" args="2 0 0 0 0 0 /map /base_link 100"/> 
+
+   <node name="map_server" pkg="map_server" type="map_server" args="$(find custom_costmap)/maps/map_levine4th.yaml"/> 
+
+   <node pkg="custom_costmap" type="set_region_cost" name="set_region_cost" output="screen">
+
+   <rosparam file="$(find custom_costmap)/params/minimal.yaml" command="load"/>
+   
+   </node> 
+
+</launch>

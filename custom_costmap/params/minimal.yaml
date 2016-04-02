@@ -1,0 +1,20 @@
+my_costmap:
+ # must match incoming static_map
+ global_frame: 'map'
+ resolution: 0.05
+ robot_base_frame: 'base_link'
+ plugins: 
+
+    - {name: static_map,       type: "costmap_2d::StaticLayer"}
+    - {name: simple_layer,     type: "custom_costmap::SimpleLayer"}   
+
+ static:
+    map_topic: /map
+#    subscribe_to_updates: false
+
+ simple_layer:
+     map_topic: /map
+ 
+ publish_frequency: 1.0
+ footprint: [[-0.325, -0.325], [-0.325, 0.325], [0.325, 0.325], [0.46, 0.0], [0.325, -0.325]]
+ 
